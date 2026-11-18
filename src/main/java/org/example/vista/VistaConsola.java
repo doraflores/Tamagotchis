@@ -25,7 +25,11 @@ public class VistaConsola {
     public int mostrarMenu(){
         System.out.println("1. Registrar Tamagotchi nuevo.");
         System.out.println("2. Mostrar todos los juguetes.");
-        System.out.println("6. Salir del menu.");
+        System.out.println("3. Mostrar todos los perros");
+        System.out.println("4. Mostrar todos los gatos");
+        System.out.println("5. Mostrar todos los cuyos");
+        System.out.println("6. Mostrar todos las muñecas");
+        System.out.println("7. Salir del menu.");
 
         return leerNumeros.nextInt();
     }
@@ -38,10 +42,4 @@ public class VistaConsola {
         System.out.println("4. Muñeca");
         return leerNumeros.nextInt();
     }
-
-
-
-
-
-
 }

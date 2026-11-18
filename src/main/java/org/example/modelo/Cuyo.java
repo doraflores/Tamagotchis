@@ -1,15 +1,18 @@
 package org.example.modelo;
 
 public class Cuyo extends Tamagotchi implements TamagotchiActions{
+    private int nivelTimidez;
 
     // Constructor parametrizado
-    public Cuyo(String nombre, int hambre, int energia, int felicidad, int salud){
+    public Cuyo(String nombre, int hambre, int energia, int felicidad, int salud, int timidez){
         super(nombre, hambre, energia, felicidad, salud);
+        this.nivelTimidez = timidez;
     }
 
     // constructor inicializado
     public Cuyo(){
         super("Sr. Cobaya", 4, 9, 7, 9);
+        nivelTimidez = 6;
     }
 
     @Override
@@ -59,6 +62,6 @@ public class Cuyo extends Tamagotchi implements TamagotchiActions{
 
     @Override
     public String toString(){
-        return nombre + " tiene:  " + hambre + " de hambre, " +  energia + " de energía, " + felicidad + " pts de felicidad, " + salud + " pts de salud.";
+        return nombre + " tiene:  " + hambre + " de hambre, " +  energia + " de energía, " + felicidad + " pts de felicidad, " + salud + " pts de salud, " + nivelTimidez + " pts de timidez";
     }
 }

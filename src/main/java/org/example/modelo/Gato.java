@@ -1,12 +1,20 @@
 package org.example.modelo;
 
 public class Gato extends Tamagotchi implements TamagotchiActions{
-    public Gato(String nombre, int hambre, int energia, int felicidad, int salud){
+    private int nivelAfectividad;
+    private int nivelCuriosidad;
+
+
+    public Gato(String nombre, int hambre, int energia, int felicidad, int salud, int afectividad, int curiosidad){
         super(nombre, hambre, energia, felicidad, salud);
+        this.nivelAfectividad = afectividad;
+        this.nivelCuriosidad = curiosidad;
     }
 
     public Gato(){
         super("Petunia", 8, 5, 4, 7);
+        nivelAfectividad = 8;
+        nivelCuriosidad = 10;
     }
 
     @Override
@@ -56,6 +64,6 @@ public class Gato extends Tamagotchi implements TamagotchiActions{
 
     @Override
     public String toString(){
-        return nombre + " tiene:  " + hambre + " de hambre, " +  energia + " de energía, " + felicidad + " pts de felicidad, " + salud + " pts de salud.";
+        return nombre + " tiene:  " + hambre + " de hambre, " +  energia + " de energía, " + felicidad + " pts de felicidad, " + salud + " pts de salud, " + nivelAfectividad + " pts de afectividad, " + nivelCuriosidad + " pts de curiosidad.";
     }
 }

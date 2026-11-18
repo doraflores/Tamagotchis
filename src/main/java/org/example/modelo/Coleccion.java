@@ -17,6 +17,17 @@ public class Coleccion {
         agregar(new Perro(nombre, hambre, energia, felicidad, salud, agresivo, hiper, olfato));
     }
 
+    public void agregarGato(String nombre, int hambre, int energia, int felicidad, int salud, int afectividad, int curiosidad){
+        agregar(new Gato(nombre, hambre, energia, felicidad, salud, afectividad, curiosidad));
+    }
+
+    public void agregarCuyo(String nombre, int hambre, int energia, int felicidad, int salud, int timidez){
+        agregar(new Cuyo(nombre, hambre, energia, felicidad, salud, timidez));
+    }
+
+    public void agregarMuneca(String nombre, int hambre, int energia, int felicidad, int salud){
+        agregar(new Muneca(nombre, hambre, energia, felicidad, salud));
+    }
 
     public String listaJuguetes(){
         StringBuffer cadena = new StringBuffer();
@@ -25,5 +36,4 @@ public class Coleccion {
         }
         return cadena.toString();
     }
-
 }
