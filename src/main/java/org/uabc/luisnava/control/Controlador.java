@@ -34,14 +34,19 @@ public class Controlador {
                         case 1: //Se crea perro
                             int agresivo = vista.leerNumero("Escribe el nivel de agresividad: ");
                             int hiper = vista.leerNumero("Escribe el nivel de hiperactividad");
-
                             modelo.agregarPerro(nombre,hambre,10,10,10,agresivo, hiper, 10);
                             break;
+
                         case 2: //Se crea Gato
+                            modelo.agregarGato(nombre, 0, 100, 100, 100);
                             break;
+
                         case 3: //Se crea Cuyo
+                            modelo.agregarCuyo(nombre, 0, 100, 100, 100);
                             break;
+
                         case 4: //Se crea muñeca
+                            modelo.agregarMuneca(nombre, 0, 100, 100, 100);
                             break;
                     }
                     break;
