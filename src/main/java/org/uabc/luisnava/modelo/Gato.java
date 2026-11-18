@@ -10,6 +10,7 @@ public class Gato extends Tamagotchi implements TamagotchiActions{
     }
 
 
+
     @Override
     public void comer(int alimento) {
         System.out.println("Estoy comiendo " + alimento);
