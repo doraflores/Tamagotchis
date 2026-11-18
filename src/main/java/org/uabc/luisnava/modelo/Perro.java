@@ -73,6 +73,10 @@ public class Perro extends Tamagotchi implements TamagotchiActions {
         System.out.println("AAUU!!");
     }
 
+    public void grunir (){
+        System.out.println("GRRRRR GRRRR >:(");
+    }
+
     public int getNivelOlfato() {
         return nivelOlfato;
     }
