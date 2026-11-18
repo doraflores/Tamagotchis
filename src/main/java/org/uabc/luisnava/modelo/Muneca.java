@@ -7,6 +7,7 @@ public class Muneca extends Tamagotchi implements TamagotchiActions{
         super(nombre, hambre, energia, felicidad, salud);
     }
 
+
     @Override
     public void comer(int alimento) {
         System.out.println("Estoy comiendo " + alimento);
