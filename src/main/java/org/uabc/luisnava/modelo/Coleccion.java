@@ -17,6 +17,10 @@ public class Coleccion {
         agregar(new Perro(nombre, hambre, energia, felicidad, salud, agresivo, hiper, olfato));
     }
 
+    public void agregarGato(String nombre, int hambre, int energia, int felicidad, int salud){
+        agregar(new Gato(nombre, hambre, energia, felicidad, salud));
+    }
+
 
     public String listaJuguetes(){
         StringBuffer cadena = new StringBuffer();
