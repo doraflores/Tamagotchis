@@ -2,11 +2,7 @@ package org.uabc.luisnava.modelo;
 
 public class Gato extends Tamagotchi implements TamagotchiActions{
     public Gato(String nombre, int hambre, int energia, int felicidad, int salud){
-        this.nombre = nombre;
-        this.hambre = hambre;
-        this.energia = energia;
-        this.felicidad = felicidad;
-        this.salud = salud;
+        super(nombre, hambre, energia, felicidad, salud);
     }
 
 
