@@ -1,0 +1,61 @@
+package org.example.control;
+
+import org.uabc.luisnava.modelo.Coleccion;
+import org.uabc.luisnava.vista.VistaConsola;
+
+public class Controlador {
+    private VistaConsola vista;
+    private Coleccion modelo;
+
+    public Controlador(VistaConsola vista, Coleccion modelo){
+        this.vista = vista;
+        this.modelo = modelo;
+    }
+
+    public void iniciar(){
+        int op = 0;
+        int tp = 0;
+        do {
+            op = vista.mostrarMenu();
+
+            switch (op){
+                case 1:
+                    System.out.println("Leer la informacion del tamagotchi");
+                    tp = vista.mostrarOpcionesTamagotchi();
+
+                    String nombre = vista.leerCadena("Escribe el nombre de tu tamagotchi: ");
+                    int hambre = vista.leerNumero("Escribe el nivel de hambre:");
+
+
+                    switch (tp){
+                        case 1: //Se crea perro
+                            int agresivo = vista.leerNumero("Escribe el nivel de agresividad: ");
+                            int hiper = vista.leerNumero("Escribe el nivel de hiperactividad");
+
+                            modelo.agregarPerro(nombre,hambre,10,10,10,agresivo, hiper, 10);
+                            break;
+                        case 2: //Se crea Gato
+                            break;
+                        case 3: //Se crea Cuyo
+                            break;
+                        case 4: //Se crea muñeca
+                            break;
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("Mostrar Lista de Tamagotchis");
+                    vista.mostrarDatos(modelo.listaJuguetes());
+                    break;
+                case 3:
+                    System.out.println();
+                    break;
+            }
+
+        } while (op != 6);
+    }
+
+
+
+
+}
