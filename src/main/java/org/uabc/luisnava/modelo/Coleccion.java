@@ -21,6 +21,17 @@ public class Coleccion {
         agregar(new Gato(nombre, hambre, energia, felicidad, salud));
     }
 
+    public void agregarCuyo(String nombre, int hambre, int energia, int felicidad, int salud){
+        agregar(new Cuyo(nombre, hambre, energia, felicidad, salud));
+    }
+
+    public void agregarMuneca(String nombre, int hambre, int energia, int felicidad, int salud){
+        agregar(new Muneca(nombre, hambre, energia, felicidad, salud));
+    }
+
+
+
+
 
     public String listaJuguetes(){
         StringBuffer cadena = new StringBuffer();
