@@ -3,6 +3,14 @@ package org.uabc.luisnava.modelo;
 public class Muneca extends Tamagotchi implements TamagotchiActions{
     //¿Atributos?
 
+    public Muneca(String nombre, int hambre, int energia, int felicidad, int salud){
+        this.nombre = nombre;
+        this.hambre = hambre;
+        this.energia = energia;
+        this.felicidad = felicidad;
+        this.salud = salud;
+    }
+
     @Override
     public void comer(int alimento) {
         System.out.println("Estoy comiendo " + alimento);
