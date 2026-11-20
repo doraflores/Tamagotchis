@@ -52,5 +52,8 @@ public class Muneca extends Tamagotchi implements TamagotchiActions{
         System.out.println("JAJAJAJA :D");
     }
 
+    public String toString(String toString){
+        return super.toString() + " Cuyo";
+    }
 
 }
