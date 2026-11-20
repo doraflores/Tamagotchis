@@ -6,6 +6,7 @@ import org.uabc.luisnava.vista.VistaConsola;
 
 import java.util.ArrayList;
 
+
 public class Controlador {
     private VistaConsola vista;
     private Coleccion modelo;
