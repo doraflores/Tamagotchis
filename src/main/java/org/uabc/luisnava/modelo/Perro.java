@@ -84,6 +84,7 @@ public class Perro extends Tamagotchi implements TamagotchiActions {
         return 0;
     }
 
+
     public int getNivelImperactividad() {
         return nivelImperactividad;
     }
