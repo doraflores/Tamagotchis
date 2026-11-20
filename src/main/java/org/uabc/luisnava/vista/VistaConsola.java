@@ -6,6 +6,7 @@ public class VistaConsola {
     Scanner leerNumeros = new Scanner(System.in);
     Scanner leerCadenas = new Scanner(System.in);
 
+
     public void mostrarDatos(String cadena){
         System.out.println(cadena);
     }
