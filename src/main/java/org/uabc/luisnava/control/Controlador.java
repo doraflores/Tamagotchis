@@ -27,14 +27,14 @@ public class Controlador {
                     tp = vista.mostrarOpcionesTamagotchi();
 
                     String nombre = vista.leerCadena("Escribe el nombre de tu tamagotchi: ");
-                    int hambre = vista.leerNumero("Escribe el nivel de hambre:");
+                    //int hambre = vista.leerNumero("Escribe el nivel de hambre:");
 
 
                     switch (tp){
                         case 1: //Se crea perro
                             int agresivo = vista.leerNumero("Escribe el nivel de agresividad: ");
                             int hiper = vista.leerNumero("Escribe el nivel de hiperactividad");
-                            modelo.agregarPerro(nombre,hambre,10,10,10,agresivo, hiper, 10);
+                            modelo.agregarPerro(nombre,0,10,10,10,agresivo, hiper, 10);
                             break;
 
                         case 2: //Se crea Gato
@@ -60,7 +60,7 @@ public class Controlador {
                     break;
             }
 
-        } while (op != 6);
+        } while (op != 7);
     }
 
 
