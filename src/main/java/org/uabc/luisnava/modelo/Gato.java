@@ -5,7 +5,9 @@ public class Gato extends Tamagotchi implements TamagotchiActions{
         super(nombre, hambre, energia, felicidad, salud);
     }
 
-
+    public Gato(){
+        super("Petunia", 8, 5, 4, 7);
+    }
 
     @Override
     public void comer(int alimento) {
@@ -51,5 +53,11 @@ public class Gato extends Tamagotchi implements TamagotchiActions{
     public void aranar(){
         System.out.println("*Rasguña*");
     }
+
+    public String toString(){
+        return super.toString() + " Gato";
+    }
+
+
 
 }
