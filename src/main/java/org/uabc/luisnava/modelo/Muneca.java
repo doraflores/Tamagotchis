@@ -35,6 +35,7 @@ public class Muneca extends Tamagotchi implements TamagotchiActions{
         return 0;
     }
 
+
     //Que hace una muñeca
     public void caminar(){
         System.out.println("*Camina*");
