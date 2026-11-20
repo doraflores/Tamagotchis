@@ -51,6 +51,7 @@ public class Cuyo extends Tamagotchi implements TamagotchiActions{
         System.out.println("CUUUIII CUUUIIII!!!!");
     }
 
+
     public String toString(){
         return super.toString() + " Cuyo";
     }
