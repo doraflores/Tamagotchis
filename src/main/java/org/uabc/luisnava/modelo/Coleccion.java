@@ -36,8 +36,31 @@ public class Coleccion {
     public String listaJuguetes(){
         StringBuffer cadena = new StringBuffer();
         for (Tamagotchi t:misJuguetes){
-            cadena.append(t);
+            if (t instanceof Perro){
+                Perro x=(Perro)t;
+                cadena.append(x.toString());
+            }
+
+            else if (t instanceof Gato){
+                Gato x=(Gato)t;
+                cadena.append(x.toString());
+            }
+
+            else if (t instanceof Cuyo){
+                Cuyo x=(Cuyo)t;
+                cadena.append(x.toString());
+            }
+
+            else if (t instanceof Muneca){
+                Muneca x=(Muneca)t;
+                cadena.append(x.toString());
+            }
+
+           // cadena.append(t);
         }
+
+
+
         return cadena.toString();
     }
 
