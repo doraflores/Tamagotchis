@@ -1,8 +1,8 @@
 package org.uabc.luisnava.modelo;
 
-//instantOff
+//instantOff para saber si un objeto es de cierto tipo
 
-public class Tamagotchi {
+public abstract class Tamagotchi {
     protected String nombre;
     protected int hambre;
     protected int energia;
@@ -71,6 +71,12 @@ public class Tamagotchi {
 
     public int getSalud(){
         return salud;
+    }
+
+    //Se tiene que agregar el toString de Tamagotchi
+
+    public String toString(){
+        return nombre + " tiene:  " + hambre + " de hambre, " +  energia + " de energía, " + felicidad + " pts de felicidad, " + salud + " pts de salud.";
     }
 
 }
