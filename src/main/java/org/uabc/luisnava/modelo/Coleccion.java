@@ -13,6 +13,7 @@ public class Coleccion {
         misJuguetes.add(t);
     }
 
+
     public void agregarPerro(String nombre, int hambre, int energia, int felicidad, int salud, int agresivo, int hiper, int olfato){
         agregar(new Perro(nombre, hambre, energia, felicidad, salud, agresivo, hiper, olfato));
     }
