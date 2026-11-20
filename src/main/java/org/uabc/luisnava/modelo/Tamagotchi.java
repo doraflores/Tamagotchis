@@ -1,7 +1,6 @@
 package org.uabc.luisnava.modelo;
 
 //instantOff para saber si un objeto es de cierto tipo
-
 public abstract class Tamagotchi {
     protected String nombre;
     protected int hambre;
