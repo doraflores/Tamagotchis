@@ -5,6 +5,7 @@ public class Gato extends Tamagotchi implements TamagotchiActions{
         super(nombre, hambre, energia, felicidad, salud);
     }
 
+
     public Gato(){
         super("Petunia", 8, 5, 4, 7);
     }
